@@ -1,0 +1,31 @@
+#+TITLE: Разбалловка
+#+COLUMNS: %TODO %50ITEM %SCORE
+
+* DONE Single-page working app to play vs easy AI
+  :PROPERTIES:
+  :SCORE: 4
+  :END:
+* DONE Advanced AI
+:PROPERTIES:
+:SCORE:    1
+:END:
+* DONE Animations
+:PROPERTIES:
+:SCORE:    1
+:END:
+* TODO Screen to choose mode + show highscore
+:PROPERTIES:
+:SCORE:    0.5
+:END:
+* TODO Backend for multiplayer via sockets
+:PROPERTIES:
+:SCORE:    2
+:END:
+* TODO Spectator mode
+:PROPERTIES:
+:SCORE:    1.5
+:END:
+* TODO Database for game stats
+:PROPERTIES:
+:SCORE:    1.5
+:END:

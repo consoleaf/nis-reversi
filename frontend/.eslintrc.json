@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true
+  },
+  "plugins": ["react-hooks"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["plugin:react/recommended"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.tsx", "**/*.ts"],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": ["off"],
+        "@typescript-eslint/no-empty-interface": [
+          "warn",
+          {
+            "allowSingleExtends": false
+          }
+        ],
+        "react/display-name": ["off"],
+        "react/prop-types": ["off"]
+      }
+    }
+  ]
+}

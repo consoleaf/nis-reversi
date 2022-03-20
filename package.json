@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "name": "reversi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aryslan Yakshibaev <yak.aryslan.1999@gmail.com>",
+  "license": "MIT"
+}

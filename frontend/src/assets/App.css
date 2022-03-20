@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+/*
+Stretchy Sprites by tobyj.net
+Feel free to copy and reuse as you like
+*/
+
+/*Set the max-width to the width of your individual sprites:*/
+.stretchy {
+  display: block;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  max-width: 500px;
+}
+.stretchy .spacer {
+  width: 100%;
+  height: auto;
+}
+.stretchy .sprite {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: none;
+  max-height: 100%;
+}
+
+.stretchy .sprite.transition {
+  transition: left 0.33s;
+  transition-timing-function: steps(19, jump-end);
+}
+
+.stretchy .sprite.s19 {
+  left: -1900%;
+}
+
+.stretchy.no-limit {
+  max-width: none;
+} /*you could also set this to a pixel size, for example 320px, to limit the maximum*/
+.stretchy.no-limit .sprite {
+  min-height: 100%;
+}

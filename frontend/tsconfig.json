@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@reversi/types": ["src/types/index"],
+      "@reversi/hooks/*": ["src/hooks/*"],
+      "@reversi/components/*": ["src/components/*"],
+      "@reversi/components": ["src/components/index"],
+      "@reversi/assets/*": ["src/assets/*"],
+      "@reversi/util/*": ["src/util/*"],
+      "@reversi/util": ["src/util/index"],
+      "@reversi/pages": ["src/pages/lazy"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
